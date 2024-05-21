@@ -6,6 +6,42 @@
     <title>Document</title>
     <!-- 초기화는 반드시 css 맨 위에 작성되어야합니다. -->
     <link rel="stylesheet" href="../reset.css">
+    <style>
+        /* #hello {
+            color: blue;
+        }
+        .hi {
+            color: red;
+        }
+        p {
+            color: pink;
+        } */
+
+        .자식 {
+            color: yellow!important;
+        }
+
+        .부모 > .자식 {
+            color: red;
+        }
+
+        .자식{
+            color: blue;
+        }
+        
+        .부모 {
+            color: pink;
+        }
+
+
+
+        .부모 {
+            color: aquamarine;
+        }
+        
+        
+
+    </style>
 </head>
 <body>
     <!-- css 우선순위 -->
@@ -31,5 +67,11 @@
             1. 부모-자식 관계가 많은 순서
             2. 아래쪽에 작성된 순서
       -->
+
+      <p class="hi" id="hello" style="color: cadetblue;">안녕하세요</p>
+
+    <p class="부모">안녕하세요 저는 <span class="자식">홍길동</span>입니다</p>
+
+    <span class="자식">성냥팔이소녀</span>
 </body>
 </html>
