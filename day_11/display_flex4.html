@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .temp-img {
+            background-color: rgb(255, 92, 173);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+
+            flex-shrink: 0;
+            /* 원이 더이상 찌그러지지 않음 */
+        }
+        .comment {
+            flex-grow: 1;
+            /* flex를 적용해 줄어든 블록의 크기를 키워줌 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">안녕하세요</p>
+        <button>삭제</button>
+    </div>
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">Lorem Ipsum is simply dummy text of the printing 
+            and typesetting industry. Lorem Ipsum has been the industry's 
+            standard dummy text ever since the 1500s, when an unknown printer 
+            took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into 
+            electronic typesetting, remaining essentially unchanged.</p>
+        <button>삭제</button>
+    </div>
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">안녕하세요</p>
+        <button>삭제</button>
+    </div>
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">안녕하세요</p>
+        <button>삭제</button>
+    </div>
+    <div class="container">
+        <div class="temp-img"></div>
+        <p class="comment">안녕하세요</p>
+        <button>삭제</button>
+    </div>
+</body>
+</html>

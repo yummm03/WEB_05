@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            display: flex;
+            /* justify-content: space-between; */
+            /* flex-direction: row; < 기본값 */
+            flex-direction: column;
+            width: 800px;
+            height: 800px;
+            border: 1px solid #222;
+            /* column으로 인해 중심축이 회전되었음
+                -> 이때 justify-content는 수직 정렬,
+                align-items는 수평 정렬에 관여하므로
+                각각 세로와 가로 정렬 */
+
+            /* flex의 방향에 따라 가로, 세로는 바뀔 수 있다. */
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
