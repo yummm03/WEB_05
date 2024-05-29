@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color:lightblue;
+            border: 1px solid #222;
+
+
+            /* text-aline: center 와 line-height: 200px; 둘 다 설정해야
+                가운데 정렬을 할 수 있다.*/
+                text-align: center;
+
+                /* 
+                    흔히 행간을 설정하는 속성으로 알고있지만
+                    사실 줄 높이를 설정하는 속성이다.
+                    부모컨텐츠의 높이와 같은값을 주면 수직방향으로 가운데 정렬된다.
+                */
+                line-height: 200px;
+
+
+                /* 
+                    실제 정렬할 땐
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                */
+
+            
+            /* 세로 정렬로 검색하면 나오긴 하는데
+                테이블에서만 쓸 수 있는 속성이라 활용 불가능 */
+            /* vertical-align: middle; */
+        }
+        .box-block {
+            display: block;
+        }
+        .box_inline {
+            display: inline;
+        }
+        .box-inline-block {
+            display: inline-block;
+        }
+        .box-none {
+            display: none;
+
+            /*
+                visibility: hidden;
+                display: none;과 비슷하게 컨텐츠를 안보이게 만들어준다.
+                실체는 존재하되 투명하게 만들어주는 기능.
+                display: none;은 실체가 없게 만들어버린다.
+            */
+            
+            /* 
+                opacity: 0; 
+                위 속성과 같은 작동을 하지만
+                투명도는 0부터 1(100%)까지 값이 연결되기 때문에
+                애니메이션 효과 부여 가능
+                visibility: hidden; 을 사용할 필요가 없다.
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box-block">block</div>
+    <div class="box box_inline">inline</div>
+    <div class="box box-inline-block">inline_block</div>
+    <div class="box box-none">none</div>
+
+    <!--
+        Home : 줄의 맨 앞
+        End : 줄의 맨 뒤
+        Ctrl + Home : 코드의 맨 앞
+        Ctrl + End : 코드의 맨 뒤
+    -->
+</body>
+</html>

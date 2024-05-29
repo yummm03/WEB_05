@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box {
+            width: 150px;
+            height: 150px;
+            border: 1px solid #222;
+
+            overflow: auto;
+
+            /* 
+                overflow: hidden;
+                넘친 컨텐츠를 안보이게 해준다.
+                하지만 높이가 지정되어 있지 않다면 컨텐츠의 길이만큼 늘어난다.
+            */
+
+            /* 
+                overflow: scroll;
+                스크롤을 만들어 넘치는 요소를 탐색할 수 있게 만들어준다.
+            */
+
+            /* 
+                overflow: auto;
+                컨테이너 밖으로 넘칠 때만 스크롤바를 만들어준다.
+            */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat numquam dignissimos vitae voluptatibus rem cum voluptatem magni vero assumenda quas eveniet ut sed, consequatur adipisci quasi, aperiam, necessitatibus placeat hic?
+    </div>
+</body>
+</html>
