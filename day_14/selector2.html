@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+    </style>
+</head>
+<body>
+        <!-- 
+            접두
+            : first, last, nth, nth-last
+
+            nth : n번째
+            nth-last : 뒤에서부터 n번째
+
+            접미
+            : child, of-type
+
+            child : 자식 (내가 몇번째 자식인지가 중요)
+            of-type : 유형 (내가 몇번째로 등장하는지가 중요)
+        -->
+
+
+        <!-- 
+            반응 선택자
+            선택자:active -> 클릭중일때
+            선택자:hover -> 마우스를 올렸을때
+        -->
+
+        <style>
+            .reaction-box {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .reaction-box:hover {
+                background-color: blanchedalmond;
+            }
+            .reaction-box:active {
+                background-color: lightblue;
+            }
+        </style>
+
+        <div class="reaction-box">
+            반응선택자
+        </div>
+
+
+
+
+        <!-- 
+            상태선택자 : input의 부수속성
+            :checked    - 체크박스등이 체크되어있을때
+            :focus      - 포커스를 가지고있을때
+            :enabled    - 활성화된 컨텐츠일때
+            :disabled   - 비활성화된 컨텐츠일때
+        -->
+
+        <style>
+            input:enabled {
+                background: pink;
+                color: white;
+            }
+            input:disabled {
+                background: black;
+            }
+            input:focus {
+                background: orange;
+            }
+        </style>
+
+        <h3>enabled</h3>
+        <p>
+                <input type="text">
+        </p>
+
+        <h3>disabled</h3>
+        <p>입력을 할 수 없는 상태로 만들기
+                <input disabled="disabled" />
+        </p>
+
+
+
+
+        <!-- 링크선택자 -->
+        <style>
+            /* 아직 방문하지 않은 링크 */
+            a:link {
+                color: pink;
+            }
+            /* 방문한적이 있는 링크 */
+            a:visited {
+                color: blue;
+            }
+        </style>
+        <a href="https://naver.com">네이버</a>
+
+
+
+
+        <!-- 
+            문자선택자
+            ::first-letter  - 첫번째 글씨에 적용
+            ::first-line    - 첫번째 줄에 적용
+            ::after         - 본래용도는 앞, 뒤에 글씨를 넣기 위한 선택자이지만
+            ::before        - 디자인만을 위한 태그를 만드는 대신 사용하기 좋은 방법
+            ::selection     - 드래그한 영역에 디자인 적용
+        -->
+
+
+
+
+        <!-- 
+            부정선택자
+            선택자:not(선택자)
+        -->
+
+        
+</body>
+</html>
